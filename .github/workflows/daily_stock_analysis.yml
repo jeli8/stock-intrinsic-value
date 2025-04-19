@@ -5,12 +5,17 @@ on:
     - cron: '0 16 * * 1-5'  # Runs at 16:00 UTC (market close) on weekdays
   workflow_dispatch:  # Allows manual triggers
 
+permissions:
+  contents: write  # This gives the workflow permission to write to the repository
+
 jobs:
   analyze_stocks:
     runs-on: ubuntu-latest
     
     steps:
     - uses: actions/checkout@v2
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}  # Use the automatic GITHUB_TOKEN
     
     - name: Set up Python
       uses: actions/setup-python@v2
@@ -31,4 +36,6 @@ jobs:
         git config --local user.name "github-actions[bot]"
         git add results_*.csv
         git commit -m "Add stock analysis results for $(date +'%Y-%m-%d')" || exit 0
-        git push 
+        git push
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
