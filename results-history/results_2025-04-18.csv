@@ -1,0 +1,4 @@
+date,name,ticker,current_price,intrinsic_value,valuation_signal
+2025-04-18,Apple Inc.,AAPL,$196.98,$118.54,Overvalued (Sell signal)
+2025-04-18,Microsoft Corporation,MSFT,$367.78,$163.07,Overvalued (Sell signal)
+2025-04-18,Alphabet Inc.,GOOGL,$151.16,$207.15,Undervalued (Buy signal)

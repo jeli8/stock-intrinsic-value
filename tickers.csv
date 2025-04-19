@@ -1,0 +1,4 @@
+ticker,growth_rate,discount_rate,years,terminal_growth
+AAPL,0.08,0.10,5,0.02
+MSFT,,,,
+GOOGL,0.10,0.12,7,0.03
