@@ -34,7 +34,8 @@ jobs:
       run: |
         git config --local user.email "github-actions[bot]@users.noreply.github.com"
         git config --local user.name "github-actions[bot]"
-        git add results_*.csv
+        mv results_*.csv results-history/
+        git add results-history/results_*.csv
         git commit -m "Add stock analysis results for $(date +'%Y-%m-%d')" || exit 0
         git push
       env:
