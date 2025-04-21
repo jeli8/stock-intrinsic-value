@@ -17,18 +17,21 @@ def calculate_trading_thresholds(current_price, intrinsic_value):
     """Calculate stop-loss and profit-taking thresholds based on intrinsic value and current price"""
     # If stock is undervalued (potential buy)
     if intrinsic_value > current_price:
-        stop_loss = current_price * 0.90  # 10% below entry point
-        profit_target = min(intrinsic_value * 1.1, current_price * 1.30)  # Either 10% above intrinsic or 30% above entry
+        stop_loss = current_price * (1 - UNDERVALUED_STOP_LOSS_PCT)
+        profit_target = min(
+            intrinsic_value * (1 + UNDERVALUED_PROFIT_TARGET_INTRINSIC_PCT),
+            current_price * (1 + UNDERVALUED_PROFIT_TARGET_PRICE_PCT)
+        )
         action = "BUY"
     # If stock is overvalued (potential sell)
     elif intrinsic_value < current_price:
-        stop_loss = current_price * 0.95  # 5% below current price for existing positions
-        profit_target = current_price * 1.05  # 5% above current price to exit
+        stop_loss = current_price * (1 - OVERVALUED_STOP_LOSS_PCT)
+        profit_target = current_price * (1 + OVERVALUED_PROFIT_TARGET_PCT)
         action = "SELL"
     # If fairly valued
     else:
-        stop_loss = intrinsic_value * 0.90  # 10% below intrinsic value
-        profit_target = intrinsic_value * 1.10  # 10% above intrinsic value
+        stop_loss = intrinsic_value * (1 - FAIR_VALUE_STOP_LOSS_PCT)
+        profit_target = intrinsic_value * (1 + FAIR_VALUE_PROFIT_TARGET_PCT)
         action = "HOLD"
     
     return stop_loss, profit_target, action
@@ -64,9 +67,9 @@ def evaluate_stock(row, results):
     risk_reward = (profit_target - current_price) / (current_price - stop_loss) if stop_loss < current_price else 0
 
     # Determine valuation signal with more detail
-    if intrinsic_per_share > current_price * 1.2:
+    if intrinsic_per_share > current_price * (1 + VALUATION_THRESHOLD):
         signal = f"Undervalued (Strong Buy) - {value_gap:.1f}% below intrinsic value"
-    elif intrinsic_per_share < current_price * 0.8:
+    elif intrinsic_per_share < current_price * (1 - VALUATION_THRESHOLD):
         signal = f"Overvalued (Strong Sell) - {-value_gap:.1f}% above intrinsic value"
     else:
         signal = f"Fairly valued (Hold) - {abs(value_gap):.1f}% from intrinsic value"

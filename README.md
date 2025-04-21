@@ -12,13 +12,13 @@ This project is a Python-based tool for estimating the intrinsic value of select
 ## 📋 To-Do List
 #### 🔄 Position Timing Logic
  - Determine time horizon for each buy/sell signal
- - Define stop-loss and profit-taking thresholds
+ - ~~Define stop-loss and profit-taking thresholds~~
  - Add logic to minimize false signals or reduce estimation error
 
 #### 🕒 Scheduled Tracking & Backtesting
- - Build a scheduled job (e.g., with cron, schedule, or APScheduler)
- - Track selected "test" stocks multiple times per trading day
- - Save tracking results (price, valuation, signal) to CSV, SQLite, or another data store
+ - ~~Build a scheduled job (e.g., with cron, schedule, or APScheduler) --> Built with github action~~
+ - Track selected "test" stocks multiple times per trading day --> On-Going
+ - ~~Save tracking results (price, valuation, signal) to CSV, SQLite, or another data store --> results-history folder~~
  - Create a script or notebook to analyze performance and accuracy of historical signals
 
 ## 🔧 Coming Soon
