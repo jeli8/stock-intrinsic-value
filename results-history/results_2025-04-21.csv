@@ -1,0 +1,23 @@
+date,name,ticker,current_price,intrinsic_value,valuation_signal
+2025-04-21,Apple Inc.,AAPL,$191.04,$118.54,Overvalued (Sell signal)
+2025-04-21,Microsoft Corporation,MSFT,$358.10,$163.07,Overvalued (Sell signal)
+2025-04-21,Alphabet Inc.,GOOGL,$146.70,$207.15,Undervalued (Buy signal)
+2025-04-21,"Amazon.com, Inc.",AMZN,$166.75,$66.24,Overvalued (Sell signal)
+2025-04-21,"Meta Platforms, Inc.",META,$483.00,$471.49,Fairly valued
+2025-04-21,NVIDIA Corporation,NVDA,$96.02,$55.71,Overvalued (Sell signal)
+2025-04-21,"Tesla, Inc.",TSLA,$225.16,$20.45,Overvalued (Sell signal)
+2025-04-21,Visa Inc.,V,$319.72,$230.39,Overvalued (Sell signal)
+2025-04-21,Walmart Inc.,WMT,$91.86,$31.92,Overvalued (Sell signal)
+2025-04-21,Johnson & Johnson,JNJ,$156.67,$174.53,Fairly valued
+2025-04-21,The Procter & Gamble Company,PG,$166.04,$164.12,Fairly valued
+2025-04-21,The Coca-Cola Company,KO,$72.36,$26.80,Overvalued (Sell signal)
+2025-04-21,The Walt Disney Company,DIS,$83.49,$88.91,Fairly valued
+2025-04-21,"Netflix, Inc.",NFLX,$994.60,$299.00,Overvalued (Sell signal)
+2025-04-21,Adobe Inc.,ADBE,$341.84,$355.25,Fairly valued
+2025-04-21,"Cisco Systems, Inc.",CSCO,$54.31,$49.70,Fairly valued
+2025-04-21,Intel Corporation,INTC,$18.39,$-62.03,Overvalued (Sell signal)
+2025-04-21,"The Home Depot, Inc.",HD,$344.16,$346.40,Fairly valued
+2025-04-21,"Salesforce, Inc.",CRM,$234.60,$247.06,Fairly valued
+2025-04-21,Mastercard Incorporated,MA,$508.66,$332.09,Overvalued (Sell signal)
+2025-04-21,"PepsiCo, Inc.",PEP,$141.06,$127.53,Fairly valued
+2025-04-21,UnitedHealth Group Incorporated,UNH,$431.51,$497.98,Fairly valued
