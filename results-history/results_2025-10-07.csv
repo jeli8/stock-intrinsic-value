@@ -1,0 +1,23 @@
+date,name,ticker,current_price,intrinsic_value,value_gap_percent,stop_loss,profit_target,risk_reward,action,valuation_signal
+2025-10-07,Apple Inc.,AAPL,$256.01,$119.99,-53.1%,$243.21,$268.81,1.00,SELL,Overvalued (Strong Sell) - 53.1% above intrinsic value
+2025-10-07,Microsoft Corporation,MSFT,$522.74,$139.33,-73.3%,$496.60,$548.88,1.00,SELL,Overvalued (Strong Sell) - 73.3% above intrinsic value
+2025-10-07,Alphabet Inc.,GOOGL,$246.15,$207.72,-15.6%,$233.84,$258.46,1.00,SELL,Fairly valued (Hold) - 15.6% from intrinsic value
+2025-10-07,"Amazon.com, Inc.",AMZN,$220.63,$65.91,-70.1%,$209.60,$231.66,1.00,SELL,Overvalued (Strong Sell) - 70.1% above intrinsic value
+2025-10-07,"Meta Platforms, Inc.",META,$709.84,$476.04,-32.9%,$674.35,$745.33,1.00,SELL,Overvalued (Strong Sell) - 32.9% above intrinsic value
+2025-10-07,NVIDIA Corporation,NVDA,$185.22,$55.83,-69.9%,$175.96,$194.48,1.00,SELL,Overvalued (Strong Sell) - 69.9% above intrinsic value
+2025-10-07,"Tesla, Inc.",TSLA,$441.55,$19.78,-95.5%,$419.47,$463.62,1.00,SELL,Overvalued (Strong Sell) - 95.5% above intrinsic value
+2025-10-07,Visa Inc.,V,$351.75,$233.74,-33.5%,$334.16,$369.33,1.00,SELL,Overvalued (Strong Sell) - 33.5% above intrinsic value
+2025-10-07,Walmart Inc.,WMT,$102.08,$32.09,-68.6%,$96.98,$107.18,1.00,SELL,Overvalued (Strong Sell) - 68.6% above intrinsic value
+2025-10-07,Johnson & Johnson,JNJ,$188.24,$174.64,-7.2%,$178.83,$197.65,1.00,SELL,Fairly valued (Hold) - 7.2% from intrinsic value
+2025-10-07,The Procter & Gamble Company,PG,$153.12,$139.75,-8.7%,$145.46,$160.78,1.00,SELL,Fairly valued (Hold) - 8.7% from intrinsic value
+2025-10-07,The Coca-Cola Company,KO,$67.17,$26.80,-60.1%,$63.82,$70.53,1.00,SELL,Overvalued (Strong Sell) - 60.1% above intrinsic value
+2025-10-07,The Walt Disney Company,DIS,$112.24,$89.40,-20.4%,$106.63,$117.85,1.00,SELL,Overvalued (Strong Sell) - 20.4% above intrinsic value
+2025-10-07,"Netflix, Inc.",NFLX,$1189.41,$301.00,-74.7%,$1129.94,$1248.88,1.00,SELL,Overvalued (Strong Sell) - 74.7% above intrinsic value
+2025-10-07,Adobe Inc.,ADBE,$344.71,$361.70,4.9%,$310.24,$397.87,1.54,BUY,Fairly valued (Hold) - 4.9% from intrinsic value
+2025-10-07,"Cisco Systems, Inc.",CSCO,$68.59,$65.09,-5.1%,$65.17,$72.02,1.00,SELL,Fairly valued (Hold) - 5.1% from intrinsic value
+2025-10-07,Intel Corporation,INTC,$36.93,$-56.85,-254.0%,$35.08,$38.78,1.00,SELL,Overvalued (Strong Sell) - 254.0% above intrinsic value
+2025-10-07,"The Home Depot, Inc.",HD,$387.20,$345.89,-10.7%,$367.84,$406.56,1.00,SELL,Fairly valued (Hold) - 10.7% from intrinsic value
+2025-10-07,"Salesforce, Inc.",CRM,$237.83,$249.40,4.9%,$214.05,$274.34,1.54,BUY,Fairly valued (Hold) - 4.9% from intrinsic value
+2025-10-07,Mastercard Incorporated,MA,$582.75,$334.90,-42.5%,$553.61,$611.89,1.00,SELL,Overvalued (Strong Sell) - 42.5% above intrinsic value
+2025-10-07,"PepsiCo, Inc.",PEP,$141.64,$127.74,-9.8%,$134.56,$148.72,1.00,SELL,Fairly valued (Hold) - 9.8% from intrinsic value
+2025-10-07,UnitedHealth Group Incorporated,UNH,$361.57,$502.95,39.1%,$325.41,$470.04,3.00,BUY,Undervalued (Strong Buy) - 39.1% below intrinsic value
